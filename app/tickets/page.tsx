@@ -10,7 +10,6 @@ export default function Tickets(): ReactElement {
                     <p><small>Currently open tickets.</small></p>
                 </div>
             </nav>
-
             <TicketList/>
         </main>
     );
