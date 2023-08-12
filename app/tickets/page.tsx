@@ -1,7 +1,17 @@
-export default function Tickets() : JSX.Element {
+import {ReactElement} from "react";
+import TicketList from "@/app/tickets/TicketList";
+
+export default function Tickets(): ReactElement {
     return (
         <main>
-            <h2>Tickets</h2>
+            <nav>
+                <div>
+                    <h2>Tickets</h2>
+                    <p><small>Currently open tickets.</small></p>
+                </div>
+            </nav>
+
+            <TicketList/>
         </main>
     );
 }
